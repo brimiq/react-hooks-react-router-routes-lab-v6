@@ -1,15 +1,16 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Movie from "./pages/Movie";
-import Home from "./components/Home";
-import Actors from "./components/Actors";
-import Directors from "./components/Directors";
+import Home from "./pages/Home";
+import Actors from "./pages/Actors";
+import Directors from "./pages/Directors";
+import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />, // ✅ use the correct error page here
     children: [
       { index: true, element: <Home /> },
       { path: "movie/:id", element: <Movie /> },

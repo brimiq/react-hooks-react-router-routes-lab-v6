@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 
 const actors = [
   {
@@ -26,6 +27,7 @@ const actors = [
 function Actors() {
   return (
     <div>
+      <NavBar/>
       <h1>Actors Page</h1>
       {actors.map((actor) => (
         <div key={actor.name}>
