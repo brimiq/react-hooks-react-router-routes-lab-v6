@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Movie from "./components/Movie";
+import Movie from "./pages/Movie";
 import Home from "./components/Home";
 import Actors from "./components/Actors";
 import Directors from "./components/Directors";
